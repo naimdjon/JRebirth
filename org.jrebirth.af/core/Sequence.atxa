@@ -1,0 +1,236 @@
+<,seb@jrebirth.org,seb@jrebirth.org,seb@jrebirth.org,seb@jrebirth.org> <http://www.architexa.com/rdf/core#creator> "true" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> a atxa-core:chronoFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx1 .
+
+_:node17ssstvbcx1 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$Model> ;
+	atxa-jdt:index "0" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx2 .
+
+_:node17ssstvbcx2 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.facade$FacadeReady.ready()> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node17ssstvbcx3 .
+
+_:node17ssstvbcx3 a atxa-core:node ;
+	atxa-core:model _:node17ssmd5uix1902 ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix1902 a atxa-jdt:method ;
+	atxa-core:instanceName "" ;
+	atxa-core:userCreated "true" .
+
+_:node17ssmd5uix2630 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ssstvbcx3 ;
+	rdf:object _:node17ssstvbcx6 ;
+	atxa-core:name "ready" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx9 .
+
+_:node17ssstvbcx9 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$DefaultModel> ;
+	atxa-jdt:index "1" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx6 .
+
+_:node17ssstvbcx6 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseModel.ready()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2631 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ssstvbcx6 ;
+	rdf:object _:node17ssstvbcx3 ;
+	atxa-core:name "void" .
+
+_:node17ssstvbcx6 atxa-core:contains _:node17ssstvbcx11 .
+
+_:node17ssstvbcx11 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseModel.initInternalModel()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2632 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ssstvbcx11 ;
+	rdf:object _:node17ssstvbcx12 ;
+	atxa-core:name "initInternalModel()" .
+
+_:node17ssmd5uix2633 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ssstvbcx11 ;
+	rdf:object _:node17ssstvbcx12 ;
+	atxa-core:name "initInternalModel()" .
+
+_:node17ssstvbcx6 atxa-core:contains _:node17ssstvbcx14 .
+
+_:node17ssstvbcx14 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View.prepare()> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx15 .
+
+_:node17ssstvbcx15 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractModel> ;
+	atxa-jdt:index "2" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx16 .
+
+_:node17ssstvbcx16 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractModel.initInternalModel()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2634 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node17ssstvbcx16 ;
+	rdf:object _:node17ssstvbcx12 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx18 .
+
+_:node17ssstvbcx18 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseModel> ;
+	atxa-jdt:index "3" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx12 .
+
+_:node17ssstvbcx12 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseModel.initInternalModel()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2635 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ssstvbcx12 ;
+	rdf:object _:node17ssstvbcx11 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx20 .
+
+_:node17ssstvbcx20 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View> ;
+	atxa-jdt:index "4" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx21 .
+
+_:node17ssstvbcx21 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View.prepare()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssstvbcx20 atxa-core:contains _:node17ssstvbcx22 .
+
+_:node17ssstvbcx22 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View.start()> ;
+	atxa-jdt:index "1" .
+
+_:node17ssstvbcx20 atxa-core:contains _:node17ssstvbcx23 .
+
+_:node17ssstvbcx23 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View.reload()> ;
+	atxa-jdt:index "2" .
+
+_:node17ssstvbcx20 atxa-core:contains _:node17ssstvbcx24 .
+
+_:node17ssstvbcx24 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$View.hide()> ;
+	atxa-jdt:index "3" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx25 .
+
+_:node17ssstvbcx25 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractView> ;
+	atxa-jdt:index "5" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx26 .
+
+_:node17ssstvbcx26 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractView.prepare()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2636 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node17ssstvbcx26 ;
+	rdf:object _:node17ssstvbcx21 ;
+	atxa-core:name "overrides" .
+
+_:node17ssstvbcx26 atxa-core:contains _:node17ssstvbcx28 .
+
+_:node17ssstvbcx28 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractView.initInternalView()> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractView.initInternalView()> atxa-core:link _:node17ssstvbcx29 .
+
+_:node17ssmd5uix2637 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ssstvbcx28 ;
+	rdf:object _:node17ssstvbcx29 ;
+	atxa-core:name "initInternalView()" .
+
+_:node17ssstvbcx28 atxa-core:contains _:node17ssstvbcx29 .
+
+_:node17ssstvbcx29 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractView.initInternalView()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2638 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ssstvbcx29 ;
+	rdf:object _:node17ssstvbcx28 ;
+	atxa-core:name "void" .
+
+_:node17ssstvbcx26 atxa-core:contains _:node17ssstvbcx32 .
+
+_:node17ssstvbcx32 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$Controller.activate()> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$Controller.activate()> atxa-core:link _:node17ssstvbcx33 .
+
+_:node17ssmd5uix2639 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ssstvbcx32 ;
+	rdf:object _:node17ssstvbcx33 ;
+	atxa-core:name "getController().activate()" .
+
+_:node17ssstvbcx32 atxa-core:contains _:node17ssstvbcx33 .
+
+_:node17ssstvbcx33 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$Controller.activate()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2640 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ssstvbcx33 ;
+	rdf:object _:node17ssstvbcx32 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence.atxa> atxa-core:contains _:node17ssstvbcx36 .
+
+_:node17ssstvbcx36 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseController> ;
+	atxa-jdt:index "6" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ssstvbcx37 .
+
+_:node17ssstvbcx37 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.jrebirth.core.ui$AbstractBaseController.activate()> ;
+	atxa-jdt:index "0" .
+
+_:node17ssmd5uix2641 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node17ssstvbcx37 ;
+	rdf:object _:node17ssstvbcx33 ;
+	atxa-core:name "overrides" .
+

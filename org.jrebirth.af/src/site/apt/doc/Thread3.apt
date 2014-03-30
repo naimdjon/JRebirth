@@ -1,0 +1,68 @@
+	------
+	Thread
+	------
+	Sébastien Bordes
+	------
+	2013-11-04
+	------
+
+Thread
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+%{toc|section=0|fromDepth=0|toDepth=3}
+
+* Threading overview
+
+	JRebirth is multi-threaded, not only by using Task Worker provided by JavaFX APIs. 
+	JRebirth has got its own Thread to manage local events (called waves) allowing components to communicate with each others.
+	It also allows to manage multiple threads in a very simple manner with its included thread pool.
+				
+	Thus all inner JRebirth tasks are processed into a custom
+					thread and don't infer with the JavaFX Application Thread which have to
+					manage user
+					events and some UI instantiation.
+	
+	Lags, UI Freeze ... are lost to history :D
+	
+	What happens when you debug a JRebirth application ? You can observe a lot of threads, but don't be scared !! 
+	Everything is at the right isolated place doing the right thing.
+	
+	The most important are :
+	-------------------------
+	
+		* JavaFX Application Thread - JAT
+		* JRebirth Internal Thread - JIT
+		* JRebirth Slot x (n threads available in JRebirth Thread Pool - JTP Slot 'n')
+			
+	Other threads are related to JavaFX platform, JRebirth only creates 2 to 5 threads (by default) that can be extended if required.
+				
+				
+					\<a href="uml/Concurrent.png" rel="lightbox" title="Thread Class Diagram"\>
+						\<img class="redux" src="uml/Concurrent.png" alt="" \>
+					\</a\>
+					\<legend\>Concurrent Class Diagram\</legend\>
+
+* Thread Rules
+				
+	JavaFX toolkit requires that all UI tasks must be done into the JAT, but it also allows
+	<<to build a view into the JIT or JTP and then link it to your scene into the JAT. >>
+				
+	All Wave processing tasks are automatically done into the JIT.
+
+	When the JRebirth Framework needs to update UI (thanks to
+	<<Model>>
+	layer), it's done
+	automatically done into the JAT. No matters to have !
+
+
+	But when you call a component directly (synchronous method:
+	<getCommand,
+		getService, getModel
+	>
+	), your call is processed into the current thread, so you must pay attention to what you are doing.
+
+				
+% { include|highlight-theme=eclipse|source=showcase/analyzer/src/main/java/org/jrebirth/af/showcase/analyzer/ui/controls/ControlsModel.java|snippet=aj:..ControlsModel.doEventsLoaded(..)|highlight-theme=eclipse}
+
+					

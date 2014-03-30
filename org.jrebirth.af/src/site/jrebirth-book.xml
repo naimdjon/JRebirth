@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <book xmlns="http://maven.apache.org/BOOK/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/BOOK/1.0.0 http://maven.apache.org/xsd/book-1.0.0.xsd">
 
-	<id>jrebirth-doc-book</id>
+	<id>jrebirth-book</id>
 	<title>JRebirth Application Framework Documentation</title>
 
 	<chapters>
@@ -12,29 +12,64 @@
 				<section>
 					<id>Introduction</id>
 				</section>
-				<section>
-					<id>releaseNotes</id>
-				</section>
-				<section>
-					<id>license</id>
-				</section>
 			</sections>
 		</chapter>
 
 		<chapter>
-			<id>Core</id>
-			<title>JRebirth Core</title>
+			<id>Configuration</id>
+			<title>Configuration</title>
 			<sections>
-				<!-- <section> <id>Installation</id> </section> -->
 				<section>
-					<id>Application</id>
+					<id>Installation</id>
 				</section>
-				<section>
-					<id>Thread</id>
-				</section>
+
 				<section>
 					<id>Logging</id>
 				</section>
+			</sections>
+		</chapter>
+
+
+		<chapter>
+			<id>BuildingApplication</id>
+			<title>Building Application</title>
+			<sections>
+				<section>
+					<id>App</id>
+				</section>
+
+				<section>
+					<id>Thread</id>
+				</section>
+
+				<section>
+					<id>Facades</id>
+				</section>
+
+				<section>
+					<id>Notifier</id>
+				</section>
+
+				<section>
+					<id>Wave</id>
+				</section>
+
+				<section>
+					<id>Commands</id>
+				</section>
+
+				<section>
+					<id>Services</id>
+				</section>
+
+				<section>
+					<id>Ui</id>
+				</section>
+				
+				<section>
+					<id>Resources</id>
+				</section>
+
 			</sections>
 		</chapter>
 

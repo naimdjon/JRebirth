@@ -1,0 +1,3 @@
+<style type="text/css">
+   @import url('../attached-includes/css/shCoreEclipse.css');
+</style>
