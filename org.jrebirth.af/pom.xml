@@ -42,6 +42,7 @@
 		<module>undoredo</module>
 		<module>showcase</module>
 		<module>preloader</module>
+		<module>controlsfx-bridge</module>
 	</modules>
 
 	<issueManagement>
